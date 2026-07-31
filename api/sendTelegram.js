@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default async function handler(req, res) {
   // --- CORS Headers ---
-  const allowedOrigin = process.env.ALLOWED_ORIGIN || 'https://fire8327.github.io'
+  const allowedOrigin = process.env.ALLOWED_ORIGIN
 
   if (req.method === 'OPTIONS') {
     res.setHeader('Access-Control-Allow-Origin', allowedOrigin);
